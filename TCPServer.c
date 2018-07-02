@@ -1,6 +1,7 @@
 /*
 TCP server that listens on port 6666. Compiled/tested with MSVS 2015 community edition.
 */
+
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <stdio.h>
@@ -37,7 +38,7 @@ int main() {
 		return 1;
 	}
 
-	// Create a SOCKET for the server to listen for client connections
+	// Create a socket for the server to listen for client connections
 	ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
 	if (ListenSocket == INVALID_SOCKET) {
 		printf("Error at socket(): %ld\n", WSAGetLastError());
@@ -56,7 +57,7 @@ int main() {
 		return 1;
 	}
 
-  // free address information as there is no need for it at this point
+	// free address information as there is no need for it at this point
 	freeaddrinfo(result);
 
 	// Listen on socket
@@ -69,13 +70,13 @@ int main() {
 
 	// Accept a client socket
 	ClientSocket = INVALID_SOCKET;
-  while ((ClientSocket = accept(ListenSocket, NULL, NULL))) {
+	while ((ClientSocket = accept(ListenSocket, NULL, NULL))) {
 
-	//Reply to the client
-	Message = "Welcome to TCP Server v1.0\n";
-	send(ClientSocket, Message, strlen(Message), 0);
-  }
-	
+		//Reply to the client
+		Message = "Welcome to TCP Server v1.0\n";
+		send(ClientSocket, Message, strlen(Message), 0);
+	}
+
 	if (ClientSocket == INVALID_SOCKET) {
 		printf("accept failed: %d\n", WSAGetLastError());
 		closesocket(ListenSocket);
