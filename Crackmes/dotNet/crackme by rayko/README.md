@@ -40,4 +40,4 @@ Looking at the bottom window, we see that `right` value equals `66830`. Let's op
 <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/crackme%20by%20rayko/Crack.PNG">
 </p>
 
-Game over. Please note you could patch the program if the challenge author says you can (not the case for this one).
+Game over! Please note you could always patch the program if the challenge author says so (not the case for this one).
