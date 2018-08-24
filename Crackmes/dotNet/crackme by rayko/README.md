@@ -1,8 +1,8 @@
- ##### Crackme: 
+##### Crackme: 
 ###### crackme by rayko
 
 ##### Level:
-###### Easy
+###### Very easy
 
 ##### Language:
 ###### VB/.NET
