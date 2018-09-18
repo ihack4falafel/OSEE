@@ -14,30 +14,32 @@
 [https://crackmes.one/crackme/5ab77f5633c5d40ad448c27c](https://crackmes.one/crackme/5ab77f5633c5d40ad448c27c)
 
 ##### Walkthrough:
-We need to crack the registration code
+Based on the author notes, we need to bypass the registration check
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Binary.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Binary.JPG">
 </p>
 
-We're interested in `Button1_Click`
+This lead to `CD26____EVEN` function
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Code.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Code.PNG">
 </p>
 
-Set breakpoint on line `369` and extract `right` value for name test :)
+we'll reverse the if statment at line `70` by switching IL instructions from `brtrue.s` to `befalse.s`
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Code1.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Code1.PNG">
 </p>
 
-Bingo!
+Now if you click on `Access Features` button, we get the following
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Final.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Final.PNG">
 </p>
 
+Click OK and voila!
+
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Final1.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Final1.PNG">
 </p>
