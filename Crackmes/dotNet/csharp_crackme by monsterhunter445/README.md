@@ -26,7 +26,7 @@ This lead to `CD26____EVEN` function
   <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Code.PNG">
 </p>
 
-We'll reverse the if statment at line `70` by switching the IL instruction `brtrue.s` to `befalse.s`
+We'll reverse the if statment at line `70` by switching the IL instruction `brtrue.s` to `brfalse.s`
 
 <p align="center">
   <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/csharp_crackme%20by%20monsterhunter445/Code1.PNG">
