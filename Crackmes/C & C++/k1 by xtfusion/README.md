@@ -14,30 +14,22 @@
 [https://crackmes.one/crackme/5ab77f5333c5d40ad448c0d8](https://crackmes.one/crackme/5ab77f5333c5d40ad448c0d8)
 
 ##### Walkthrough:
-We need to bypass username and serial in order to get a keygen.
+We need to bypass the name and serial check in order to get a keygen.
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/edit/master/Crackmes/C%20&%20C++/k1%20by%20xtfusion/Program.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/C%20%26%20C%2B%2B/k1%20by%20xtfusion/Program.png">
 </p>
 
-We're interested in `Button1_Click`
+After spending a few moments in IDA Pro I found that If the name or serial are empty we win, without going into too many details see below ;)
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Code.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/C%20%26%20C%2B%2B/k1%20by%20xtfusion/Code.png">
 </p>
 
-Set breakpoint on line `369` and extract `right` value for name test :)
+Let's test it out
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Code1.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/C%20%26%20C%2B%2B/k1%20by%20xtfusion/Final.png">
 </p>
 
 Bingo!
-
-<p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Final.JPG">
-</p>
-
-<p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Final1.JPG">
-</p>
