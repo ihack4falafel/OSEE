@@ -14,10 +14,10 @@
 [https://crackmes.one/crackme/5ab77f5333c5d40ad448c0d8](https://crackmes.one/crackme/5ab77f5333c5d40ad448c0d8)
 
 ##### Walkthrough:
-We need to crack the registration code
+We need to bypass username and serial in order to get a keygen.
 
 <p align="center">
-  <img src="https://github.com/ihack4falafel/OSEE/blob/master/Crackmes/dotNet/tricky_registration%20by%20r4v3n_ths/Binary.JPG">
+  <img src="https://github.com/ihack4falafel/OSEE/edit/master/Crackmes/C%20&%20C++/k1%20by%20xtfusion/Program.JPG">
 </p>
 
 We're interested in `Button1_Click`
